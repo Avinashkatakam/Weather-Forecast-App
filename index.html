@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <form id="weather-form">
+      <input
+        type="text"
+        id="name"
+        autocomplete="off"
+        placeholder="Enter city name"
+        required
+      />
+      <button type="submit" title="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button type="button" id="use-location" title="Use Current Location">
+        📍
+      </button>
+    </form>
+
+    <section class="result">
+      <figure class="name">
+        <figcaption>London</figcaption>
+        <img src="" alt="Country Flag" />
+      </figure>
+
+      <figure class="temperature">
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" width="100" />
+        <figcaption>
+          <span>31</span><sup>o</sup>
+        </figcaption>
+      </figure>
+
+      <p class="description">Overcast Clouds</p>
+
+      <ul>
+        <li>
+          <span>Clouds</span>
+          <i class="fa-solid fa-cloud"></i>
+          <span id="clouds">98</span>%
+        </li>
+        <li>
+          <span>Humidity</span>
+          <i class="fa-solid fa-droplet"></i>
+          <span id="humidity">98</span>%
+        </li>
+        <li>
+          <span>Wind</span>
+          <i class="fa-solid fa-wind"></i>
+          <span id="wind-speed">98</span> km/hr
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
